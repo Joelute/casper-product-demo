@@ -1,17 +1,9 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
+import styles from "../styles/layout.module.css";
+import Image from "next/image";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +17,42 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"></link>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"></link>
+        <script src="https://kit.fontawesome.com/64270b74e6.js"></script>
+      </head>
+      <body>
+        <header className={styles["header-container"]}>
+        <div className={`${styles["promo-header"]}`}>
+          <button className={styles["promo-button"]}>EN | FR</button>
+          <div className={styles["promo-text"]}>Enjoy free shipping and easy returns. Rest easy with our 100-night risk-free trial!</div>
+          <button className={styles["promo-button"]}>Find a store <i className="uil uil-map-marker"></i></button>
+        </div>
+        <div className={styles.header}>
+          <div className={styles["menu-icon"]}>
+          <i className="fa-solid fa-bars"></i>
+          </div>
+          
+          <a href="/" className={styles.logo}>
+            <Image src="/casper_logo.jpg" alt="Casper Logo" width={116} height={40}/>
+          </a>
+          <nav className={styles.nav}>
+            <a href="/" className={styles.link}>Mattresses</a>
+            <a href="/" className={styles.link}>Pillow</a>
+            <a href="/" className={styles.link}>Bedding</a>
+            <a href="/" className={styles.link}>Sheets</a>
+            <a href="/" className={styles.link}>Furniture</a>
+            <a href="/" className={styles.link}>Accessories</a>
+            <a href="/" className={styles.link}>Sales and Offers</a>
+          </nav>
+          <button className={styles.cart}>
+            <Image src="/cart.jpg" alt="Cart" width={30} height={30}/>
+          </button>
+        </div>
+      </header>
         {children}
       </body>
     </html>
