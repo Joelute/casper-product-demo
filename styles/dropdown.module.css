@@ -1,14 +1,14 @@
 .size-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-  }
-  
-  .size-selector {
-    font-size: 1.035rem;
-    padding: 1rem;
-    border: 2px solid #e6e6e6;
-    border-radius: .25rem;
-  }
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.size-selector {
+  font-size: 1.035rem;
+  padding: 1rem;
+  border: 2px solid #e6e6e6;
+  border-radius: 0.25rem;
+}

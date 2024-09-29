@@ -26,8 +26,7 @@
     "product-showcase-feature product-showcase-feature"
     "product-showcase-image-1 product-showcase-image-2"
     "product-showcase-image-3 product-showcase-image-4"
-    "product-showcase-image-5 product-showcase-image-5"
-  ;
+    "product-showcase-image-5 product-showcase-image-5";
 }
 
 .product-showcase-hook {
@@ -109,7 +108,7 @@
   .product {
     grid-template-columns: 1fr;
   }
-  
+
   .image-container {
     overflow: scroll;
     -ms-overflow-style: none;
