@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "../styles/page.module.css";
 import SimpleDivider from "../components/SimpleDivider";
 import ProductInformation from "../components/ProductInformation";
 import Three from "../components/Three";

@@ -93,4 +93,9 @@
   .promo-button:last-child {
     display: none;
   }
+
+  .promo-header {
+    font-size: 0.875rem;
+    justify-content: center;
+  }
 }
