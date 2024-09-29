@@ -1,0 +1,6 @@
+tasks:
+  - name: Script Task
+    command: npm i
+
+  - name: Run dev environment
+    command: npm run dev

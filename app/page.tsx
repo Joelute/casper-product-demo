@@ -1,6 +1,8 @@
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
 import SimpleDivider from "../components/SimpleDivider";
+import Three from "../components/Three";
 
 export default function Home() {
   const imageData = [
@@ -134,6 +136,7 @@ export default function Home() {
       </div>
       </div>
       <SimpleDivider />
+      <Three />
     </main>
   );
 }
