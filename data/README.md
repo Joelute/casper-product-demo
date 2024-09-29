@@ -1,0 +1,1 @@
+This folder contains all the fake dummy data that is used in place of backend.

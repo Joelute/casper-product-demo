@@ -2,34 +2,16 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import SimpleDivider from "../components/SimpleDivider";
+import Dropdown from "../components/Dropdown";
 import Three from "../components/Three";
+import data from "../data/Product.json";
+import { useState } from "react";
 
 export default function Home() {
-  const imageData = [
-    {
-      src: "/image1.jpg",
-      alt: "Product",
-    },
-    {
-      src: "/image2.jpg",
-      alt: "Product",
-    },
-    {
-      src: "/image3.jpg",
-      alt: "Product",
-    },
-    {
-      src: "/image4.jpg",
-      alt: "Product",
-    },
-    {
-      src: "/image5.jpg",
-      alt: "Product",
-    },
-  ]
-
+  const [productData, setProductData] = useState(data.result);
+ 
   const renderCarousel = () => {
-    return imageData.map((image) => {
+    return productData.imageData.map((image) => {
       return (
           <Image
             src={image.src}
@@ -107,23 +89,13 @@ export default function Home() {
             /></div>   
         </div>
         <div className={styles.details}>
-          <h1 className={styles.name}>The Casper Mattress</h1>
-          <p className={styles.price}>$1199</p>
+          <h1 className={styles.name}>{productData.productName}</h1>
+          <p className={styles.price}>${productData.price}</p>
 
         <div className={styles.details}>
-          <div className={styles["size-container"]}>
-            <label className={styles["size-title"]}>Select your size
-            </label>
-            <select className={styles["size-selector"]}>
-              <option disabled>Select Size</option>
-              <option>Twin</option>
-              <option>Full</option>
-              <option>Queen</option>
-              <option>King</option>
-            </select>
-          </div>
+          <Dropdown sizes={productData.size}/>
             <button className={styles.button}>Add to Cart</button>
-            <p className={styles["product-details-description"]}>The first premium foam mattress-in-a-box, The Casper works its magic and delivers unbeatable comfort night after night.
+            <p className={styles["product-details-description"]}>{productData.description}
             </p>
             <ul className={styles["product-details-list"]}>
               <li className={styles["product-details-item"]}>Casper Signature Foam with AirScape® Technology increases airflow and soothes you to sleep.</li>

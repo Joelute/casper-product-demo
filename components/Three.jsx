@@ -12,7 +12,7 @@ import styles from "../styles/three.module.css"
 function MyThree() {
   return (
     <div className={`${styles.container}`}>
-        <h1>See the perfection on full display.</h1>
+        <h1>See perfection on full display.</h1>
         <p>The perfect mattress that fits all the needs in your home.</p>
         <Canvas
         style={{

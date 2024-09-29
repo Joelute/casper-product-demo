@@ -1,0 +1,36 @@
+{
+    "result":
+        {
+            "productName": "The Casper Mattress",
+            "price": "1199",
+            "description": "The first premium foam mattress-in-a-box, The Casper works its magic and delivers unbeatable comfort night after night.",
+            "size": [
+                "Twin",
+                "Full",
+                "Queen",
+                "King"
+            ],
+            "imageData": [
+                {
+                  "src": "/image1.jpg",
+                  "alt": "Product"
+                },
+                {
+                  "src": "/image2.jpg",
+                  "alt": "Product"
+                },
+                {
+                  "src": "/image3.jpg",
+                  "alt": "Product"
+                },
+                {
+                  "src": "/image4.jpg",
+                  "alt": "Product"
+                },
+                {
+                  "src": "/image5.jpg",
+                  "alt": "Product"
+                }
+              ]
+        }
+}
