@@ -2,7 +2,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import SimpleDivider from "../components/SimpleDivider";
-import Dropdown from "../components/Dropdown";
+import ProductInformation from "../components/ProductInformation";
 import Three from "../components/Three";
 import data from "../data/Product.json";
 import { useState } from "react";
@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <main>
-      {/*Main container dividing the main page into two sections - product showcase and details*/}
+      {/*Main container dividing the main page into two sections - product gallery and product infomation*/}
       <div className={styles.main}>
       <div className={styles.product}>
         {/* Product showcase container displaying the product image and features */}
@@ -86,25 +86,10 @@ export default function Home() {
               alt="Product"
               fill={true}
               className={styles.image}
-            /></div>   
+            />
+          </div>   
         </div>
-        <div className={styles.details}>
-          <h1 className={styles.name}>{productData.productName}</h1>
-          <p className={styles.price}>${productData.price}</p>
-
-        <div className={styles.details}>
-          <Dropdown sizes={productData.size}/>
-            <button className={styles.button}>Add to Cart</button>
-            <p className={styles["product-details-description"]}>{productData.description}
-            </p>
-            <ul className={styles["product-details-list"]}>
-              <li className={styles["product-details-item"]}>Casper Signature Foam with AirScape® Technology increases airflow and soothes you to sleep.</li>
-              <li className={styles["product-details-item"]}>AirScape Technology channels away heat and humidity.</li>
-              <li className={styles["product-details-item"]}>Premium memory foam conforms to your body to absorb pressure.
-              ProSupport Foam prevents sinking and sagging.</li>
-            </ul>
-          </div>
-        </div>
+        <ProductInformation productData={productData}/>
       </div>
       </div>
       <SimpleDivider />

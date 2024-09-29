@@ -92,29 +92,6 @@
   position: relative !important;
 }
 
-.details {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.button {
-  width: 100%;
-  background: rgb(30 48 110);
-  color: white;
-  padding: 1rem;
-  border-radius: .25rem;
-}
-
-.name {
-  font-weight: 500;
-  color: rgb(30 48 110);
-}
-
-.product-details-list {
-  padding-left: 1rem;
-}
-
 .carousel-image {
   display: none;
 }
