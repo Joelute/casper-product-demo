@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import SimpleDivider from "../components/SimpleDivider";
 
 export default function Home() {
   const imageData = [
@@ -41,8 +42,9 @@ export default function Home() {
   }
 
   return (
-    <main className={styles.main}>
+    <main>
       {/*Main container dividing the main page into two sections - product showcase and details*/}
+      <div className={styles.main}>
       <div className={styles.product}>
         {/* Product showcase container displaying the product image and features */}
         <div className={styles["product-details-container"]}>
@@ -130,6 +132,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </div>
+      <SimpleDivider />
     </main>
   );
 }
