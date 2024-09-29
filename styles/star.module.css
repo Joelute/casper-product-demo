@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  color: rgb(231, 114, 27);
+}
+
+.container i {
+  font-size: 0.9rem;
+}
+
+.container p {
+  margin-left: 0.5rem;
+  font-weight: 700;
+}

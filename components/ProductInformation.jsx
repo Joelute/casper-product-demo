@@ -1,5 +1,6 @@
 import styles from "../styles/product_infomation.module.css";
 import Dropdown from "../components/Dropdown";
+import Star from "./Star";
 
 // Main component that renders the product infomation section
 
@@ -9,6 +10,7 @@ import Dropdown from "../components/Dropdown";
 export default function SimpleDivider({ productData }) {
   return (
     <div className={styles.details}>
+      <Star review={productData.review} />
       <h1 className={styles.name}>{productData.productName}</h1>
       <p className={styles.price}>${productData.price}</p>
 

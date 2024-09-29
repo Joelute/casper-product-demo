@@ -74,6 +74,10 @@
   font-size: 1.5rem;
 }
 
+.nav .link:last-child {
+  color: rgb(231, 114, 27);
+}
+
 @media (max-width: 1024px) {
   .nav {
     display: none;
