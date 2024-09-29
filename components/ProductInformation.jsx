@@ -19,10 +19,7 @@ export default function SimpleDivider({productData}) {
             <button className={styles.button}>Add to Cart</button>
             <p>{productData.description}</p>
             <ul className={styles["product-details-list"]}>
-                <li>Casper Signature Foam with AirScape® Technology increases airflow and soothes you to sleep.</li>
-                <li>AirScape Technology channels away heat and humidity.</li>
-                <li>Premium memory foam conforms to your body to absorb pressure.
-                ProSupport Foam prevents sinking and sagging.</li>
+                {productData.featureDescription.map((description) => <li>{description}</li>)}
             </ul>
         </div>
     </div>

@@ -33,6 +33,8 @@ export default function Home() {
         {/* Product showcase container displaying the product image and features */}
         <div className={styles["product-details-container"]}>
           <div className={styles["image-container"]}>
+            {/*Extremely hacky way to create a carouse. Appending it to the main image that'll create a horzontal
+            scrolling carousel.*/}
             <Image
               src="/product.jpg"
               alt="Product"
@@ -44,15 +46,15 @@ export default function Home() {
           </div>
           {/* Product showcase container displaying the product features */}
           <div className={styles["product-showcase"]}>
-            <span className={styles["product-showcase-hook"]}>Inspired by the mattress that started it all</span>
+            <span className={styles["product-showcase-hook"]}>{productData.hook}</span>
             <div className={styles["product-showcase-feature-container"]}>
               <div className={styles["product-showcase-feature"]}>
-                <span className={styles["product-showcase-feature-title"]}>Casper</span>
-                <span className={styles["product-showcase-feature-description"]}>Our uniquely responsive layer of foam is designed to soothe you to sleep with the perfect bit of bounce.</span>
+                <span className={styles["product-showcase-feature-title"]}>{productData.featureShowcase[0].name}</span>
+                <span className={styles["product-showcase-feature-description"]}>{productData.featureShowcase[0].description}</span>
               </div>
               <div className={styles["product-showcase-feature"]}>
-                <span className={styles["product-showcase-feature-title"]}>AirScape</span>
-                <span className={styles["product-showcase-feature-description"]}>Thousands of perforations in a breathable foam help keep you comfortably cool all night.</span>
+                <span className={styles["product-showcase-feature-title"]}>{productData.featureShowcase[1].name}</span>
+                <span className={styles["product-showcase-feature-description"]}>{productData.featureShowcase[1].description}</span>
               </div>
             </div>
             <span className={styles["product-showcase-image"]}><Image

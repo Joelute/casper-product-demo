@@ -4,11 +4,27 @@
             "productName": "The Casper Mattress",
             "price": "1199",
             "description": "The first premium foam mattress-in-a-box, The Casper works its magic and delivers unbeatable comfort night after night.",
+            "featureDescription":[
+              "Casper Signature Foam with AirScape® Technology increases airflow and soothes you to sleep.",
+              "AirScape Technology channels away heat and humidity.",
+              "Premium memory foam conforms to your body to absorb pressure. ProSupport Foam prevents sinking and sagging."
+            ],
             "size": [
                 "Twin",
                 "Full",
                 "Queen",
                 "King"
+            ],
+            "hook": "Inspired by the mattress that started it all",
+            "featureShowcase": [
+              {
+                "name": "Casper",
+                "description": "Our uniquely responsive layer of foam is designed to soothe you to sleep with the perfect bit of bounce."
+              },
+              {
+                "name": "AirScape",
+                "description": "Thousands of perforations in a breathable foam help keep you comfortably cool all night."
+              }
             ],
             "imageData": [
                 {
