@@ -1,6 +1,6 @@
 # Casper Clone
 
-This product project is a clone of Caspers product page built using React with Next.js. It features a well-designed layout of the top of the page as well as a 3D viewer of the mattress utilizing Three.js.
+This project is a clone of Casper's product page built using React with Next.js. It features a well-designed layout of the top of the page as well as a 3D viewer of the mattress utilizing Three.js.
 
 Casper's product page can be broken down into multiple components featuring the header, overview, feature showcase, similar products, FAQ, customer reviews and footer. Due to the limited time, this project only covers the header and overview as they are the first components displayed to the customers. This means they’re the most important components on the page in order to capture the customer's attention.
 
@@ -16,7 +16,7 @@ The body of the overview is more complex but it can be divided into two differen
     
     The layout of this can be easily achieved using grid templates and assigning proper areas and positions to the associated picture/element
     
-- overview of product information (price, review, description)
+- Overview of product information (price, review, description)
     
     Product information is just information stacked on each other we're going rows. Using Flexbox is very easy to get the layout that we would like
     
@@ -60,7 +60,7 @@ I've also spent a bit of time cleaning up the code and extracting it into Smalle
 
 ### **To be implemented**
 
-With the limited time I had, I had to drop a lot of the small fine details on the website and opt to nail down the big general layout of the site to at least provide a good experience for the customers shopping around. The following are details that should be implemented or fixed.
+With the limited time I had, I limited my focus on the major parts of the website provide a good experience for the customers shopping around while also adding a feature that is possibly beneficial. The following are details that should be implemented or fixed.
 
 - Font size and font spacing
 - Padding and spacing of the site

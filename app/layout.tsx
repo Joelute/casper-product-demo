@@ -77,7 +77,7 @@ export default function RootLayout({
               </a>
             </nav>
             <button className={styles.cart}>
-              <Image src="/cart.jpg" alt="Cart" width={30} height={30} />
+              <i className="fa-solid fa-cart-shopping"></i>
             </button>
           </div>
         </header>
