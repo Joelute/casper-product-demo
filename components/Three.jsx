@@ -19,7 +19,7 @@ function MyThree() {
           height: "100%",
         }}
       >
-        <PerspectiveCamera makeDefault position={[50, 100, 100]} />
+        <PerspectiveCamera makeDefault position={[1, 2, 2]} />
         <Environment preset="studio" />
         <OrbitControls />
         <Mattress />
